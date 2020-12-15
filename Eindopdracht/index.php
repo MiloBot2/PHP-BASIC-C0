@@ -4,11 +4,11 @@
 /******************************************* OPDRACHT 1 doe je hieronder *******************************************/
 
 /* 
- * Opdracht 1: voeg hier het bestand allcoins.php in. 
+ * Opdracht 1: voeg hier het bestand bitcoindData.php in. 
  * Verder hoef je geen code te schrijven op deze pagina.
  */
 
-
+ include 'bitcoinData.php';
 
 /*******************************************************************************************************************/
 /**************************** De code hieronder heb je nodig en hoef je niet aan te passen *************************/

@@ -15,15 +15,15 @@
 /*******************************************************************************************************************/
 /******************************************* OPDRACHT 2 doe je hieronder *******************************************/
 
+
 /* 
  * Opdracht 2: Zet hier de $buttons array neer 
  */
 
+// $buttons = [20, 50, 75.50];
 
 /******************************************* OPDRACHT 2 doe je hierboven *******************************************/
 /*******************************************************************************************************************/
-
-
 
 /*******************************************************************************************************************/
 /******************************************* OPDRACHT 3 doe je hieronder *******************************************/
@@ -40,14 +40,14 @@ function calculateBitcoinAmount()
         $euro = (int)$_GET['euro']; //Dit blokje code (if-statement) kun je laten staan.
     }
 
-    //SCHRIJF JE CODE.
+    $btc_waarde = getBitcoinPrice();
 
+    $btc_total =  $euro / $btc_waarde;
 
-
+    echo $btc_total;
 }
 /******************************************* OPDRACHT 3 doe je hierboven *******************************************/
 /*******************************************************************************************************************/
-
 
 
 /*******************************************************************************************************************/
@@ -71,6 +71,10 @@ $transactions = [
     [5211.67, 200, 0.0384]
 ];
 
+array_push($transactions, [7312.32, 200, 0.02735]);
+array_push($transactions, [1312.33, 200, 0.15240]);
+array_push($transactions, [9312.34, 200, 0.02148]);
+
 if (isset($_GET['euro'])) {
 
     $euro = $_GET['euro']; //deze regel laten staan
@@ -79,6 +83,12 @@ if (isset($_GET['euro'])) {
      * Schrijf hieronder de code om de gekochte bitcoin aan de array $transactions toe te voegen.
      * Je voegt een bitcoinprijs toe, de prijs in euro's en het aantal gekochte bitcoins.
      */
+
+    $btc_waarde = getBitcoinPrice();
+
+    $btc_total = $euro / $btc_waarde;
+
+    array_push($transactions,[$btc_waarde, $euro, $btc_total]);
 }
 
 

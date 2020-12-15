@@ -25,5 +25,6 @@ Tekst bron: [phphulp.nl](https://www.phphulp.nl/php/tutorial/overig/php-beginner
 
 ![Server](server-side.png)
 
+test2
 
 TEST
