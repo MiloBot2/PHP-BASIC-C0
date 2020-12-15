@@ -24,3 +24,6 @@ Je gaat een eigen lokale server installeren en deze serveert de pagina's (net al
 Tekst bron: [phphulp.nl](https://www.phphulp.nl/php/tutorial/overig/php-beginners-handleiding/575/inleiding/1480/)
 
 ![Server](server-side.png)
+
+
+TEST
